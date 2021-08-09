@@ -1,14 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
-
+let nombre="yhomira"
+let estaciones=["primavera","verano","otoño","invierno"]
 function App() {
   return (
+    <>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <label htmlFor="nombre">Nombre</label>
+        <input id="nombre"/>
+        <h1>{nombre}</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Editar <code>src/App.js</code> and save to reload.
         </p>
+
+        <ul>
+          {estaciones.map((el,index)=>(
+              <li key={index}>{el}</li>
+            ))
+          }
+        </ul>
+
+        <p>{2+1}</p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -19,6 +33,7 @@ function App() {
         </a>
       </header>
     </div>
+    </>
   );
 }
 
