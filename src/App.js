@@ -35,7 +35,7 @@ function App() {
         </a>
       </header>
     <section>
-      <Componente msg="Hola Soy un componente"/>
+      <Componente msg="Hola Soy un componente funcional expresado"/>
     </section>
     </div>
     </>
