@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Componente from "./components/Componente";
+
 let nombre="yhomira"
 let estaciones=["primavera","verano","otoño","invierno"]
 function App() {
@@ -32,6 +34,9 @@ function App() {
           Learn React
         </a>
       </header>
+    <section>
+      <Componente msg="Hola Soy un componente"/>
+    </section>
     </div>
     </>
   );
